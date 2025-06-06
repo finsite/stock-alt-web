@@ -1,8 +1,8 @@
 ---
-site_name: Template Python
-site_description: Documentation for the Template Python Project
+site_name: Stock Alt Web
+site_description: Documentation for the Stock Alt Web Project
 site_author: Mark Quinn
-repo_url: https://github.com/finsite/template_python
+repo_url: https://github.com/finsite/stock-alt-web
 theme:
   name: material
 nav:

@@ -1,0 +1,22 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stock-alt-web
+  labels:
+    app: stock-alt-web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stock-alt-web
+  template:
+    metadata:
+      labels:
+        app: stock-alt-web
+    spec:
+      containers:
+      - name: stock-alt-web
+        image: stock-alt-web:latest
+        ports:
+        - containerPort: 8080
