@@ -16,7 +16,7 @@ spec:
         app: stock-alt-web
     spec:
       containers:
-      - name: stock-alt-web
-        image: stock-alt-web:latest
-        ports:
-        - containerPort: 8080
+        - name: stock-alt-web
+          image: stock-alt-web:latest
+          ports:
+            - containerPort: 8080
