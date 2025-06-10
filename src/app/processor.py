@@ -3,7 +3,6 @@
 from typing import Any
 
 from textblob import TextBlob
-from textblob.sentiments import BaseSentimentAnalyzer
 
 from app.utils.setup_logger import setup_logger
 from app.utils.types import validate_dict
@@ -13,8 +12,7 @@ logger = setup_logger(__name__)
 
 
 def process(payloads: list[dict[str, Any]]) -> list[dict[str, Any]]:
-    """
-    Process a batch of messages for sentiment analysis.
+    """Process a batch of messages for sentiment analysis.
 
     Each message must contain a 'text' field.
     Sentiment polarity and label are added to the message.
@@ -28,6 +26,7 @@ def process(payloads: list[dict[str, Any]]) -> list[dict[str, Any]]:
     -------
     list[dict[str, Any]]
         Enriched messages with sentiment analysis results.
+
     """
     results: list[dict[str, Any]] = []
 
